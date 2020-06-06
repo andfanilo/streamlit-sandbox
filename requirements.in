@@ -1,4 +1,4 @@
 matplotlib
 scikit-learn
-streamlit
+streamlit==0.60
 vega_datasets

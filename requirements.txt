@@ -11,8 +11,8 @@ backcall==0.1.0           # via ipython
 base58==2.0.0             # via streamlit
 bleach==3.1.5             # via nbconvert
 blinker==1.4              # via streamlit
-boto3==1.13.23            # via streamlit
-botocore==1.16.23         # via boto3, s3transfer, streamlit
+boto3==1.13.24            # via streamlit
+botocore==1.16.24         # via boto3, s3transfer, streamlit
 cachetools==4.1.0         # via streamlit
 certifi==2020.4.5.1       # via requests
 chardet==3.0.4            # via requests
@@ -25,7 +25,7 @@ docutils==0.15.2          # via botocore
 entrypoints==0.3          # via altair, nbconvert
 enum-compat==0.0.3        # via streamlit
 idna==2.9                 # via requests
-importlib-metadata==1.6.0  # via jsonschema
+importlib-metadata==1.6.1  # via jsonschema
 ipykernel==5.3.0          # via ipywidgets, notebook, pydeck
 ipython-genutils==0.2.0   # via nbformat, notebook, traitlets
 ipython==7.15.0           # via ipykernel, ipywidgets
@@ -61,6 +61,8 @@ pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.16.0        # via jsonschema
 python-dateutil==2.8.1    # via botocore, jupyter-client, matplotlib, pandas, streamlit
 pytz==2020.1              # via pandas, tzlocal
+pywin32==227              # via jupyter-core
+pywinpty==0.5.7           # via terminado
 pyzmq==19.0.1             # via jupyter-client, notebook
 requests==2.23.0          # via streamlit
 s3transfer==0.3.3         # via boto3
@@ -68,7 +70,7 @@ scikit-learn==0.23.1      # via -r requirements.in
 scipy==1.4.1              # via scikit-learn
 send2trash==1.5.0         # via notebook
 six==1.15.0               # via bleach, cycler, jsonschema, packaging, protobuf, pyrsistent, python-dateutil, traitlets, validators
-streamlit==0.61.0         # via -r requirements.in
+streamlit==0.60           # via -r requirements.in
 terminado==0.8.3          # via notebook
 testpath==0.4.4           # via nbconvert
 threadpoolctl==2.1.0      # via scikit-learn
