@@ -61,8 +61,6 @@ pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.16.0        # via jsonschema
 python-dateutil==2.8.1    # via botocore, jupyter-client, matplotlib, pandas, streamlit
 pytz==2020.1              # via pandas, tzlocal
-pywin32==227              # via jupyter-core
-pywinpty==0.5.7           # via terminado
 pyzmq==19.0.1             # via jupyter-client, notebook
 requests==2.23.0          # via streamlit
 s3transfer==0.3.3         # via boto3
