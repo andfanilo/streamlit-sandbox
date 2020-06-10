@@ -7,14 +7,14 @@
 altair==4.1.0             # via streamlit
 astor==0.8.1              # via streamlit
 attrs==19.3.0             # via jsonschema
-backcall==0.1.0           # via ipython
-base58==2.0.0             # via streamlit
+backcall==0.2.0           # via ipython
+base58==2.0.1             # via streamlit
 bleach==3.1.5             # via nbconvert
 blinker==1.4              # via streamlit
-boto3==1.13.24            # via streamlit
-botocore==1.16.24         # via boto3, s3transfer, streamlit
+boto3==1.13.26            # via streamlit
+botocore==1.16.26         # via boto3, s3transfer, streamlit
 cachetools==4.1.0         # via streamlit
-certifi==2020.4.5.1       # via requests
+certifi==2020.4.5.2       # via requests
 chardet==3.0.4            # via requests
 click==7.1.2              # via streamlit
 colorama==0.4.3           # via ipython
@@ -42,7 +42,7 @@ markupsafe==1.1.1         # via jinja2
 matplotlib==3.2.1         # via -r requirements.in
 mistune==0.8.4            # via nbconvert
 nbconvert==5.6.1          # via notebook
-nbformat==5.0.6           # via ipywidgets, nbconvert, notebook
+nbformat==5.0.7           # via ipywidgets, nbconvert, notebook
 notebook==6.0.3           # via widgetsnbextension
 numpy==1.18.5             # via altair, matplotlib, pandas, pydeck, scikit-learn, scipy, streamlit
 packaging==20.4           # via bleach, streamlit
@@ -68,7 +68,7 @@ scikit-learn==0.23.1      # via -r requirements.in
 scipy==1.4.1              # via scikit-learn
 send2trash==1.5.0         # via notebook
 six==1.15.0               # via bleach, cycler, jsonschema, packaging, protobuf, pyrsistent, python-dateutil, traitlets, validators
-streamlit==0.60           # via -r requirements.in
+streamlit==0.61.0         # via -r requirements.in
 terminado==0.8.3          # via notebook
 testpath==0.4.4           # via nbconvert
 threadpoolctl==2.1.0      # via scikit-learn
@@ -81,7 +81,7 @@ urllib3==1.25.9           # via botocore, requests
 validators==0.15.0        # via streamlit
 vega-datasets==0.8.0      # via -r requirements.in
 watchdog==0.10.2          # via streamlit
-wcwidth==0.2.3            # via prompt-toolkit
+wcwidth==0.2.4            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 widgetsnbextension==3.5.1  # via ipywidgets
 zipp==3.1.0               # via importlib-metadata
