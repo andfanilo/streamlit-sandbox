@@ -142,3 +142,4 @@ data/
 sandbox.ipynb
 .vscode
 .streamlit
+test.db

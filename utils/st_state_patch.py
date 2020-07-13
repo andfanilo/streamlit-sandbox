@@ -1,5 +1,4 @@
 """Another prototype of the State implementation.
-https://gist.github.com/tvst/0899a5cdc9f0467f7622750896e6bd7f
 
 Usage
 -----
