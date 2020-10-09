@@ -79,9 +79,15 @@ import os
 import threading
 import collections
 
-from streamlit.server.Server import Server
 import streamlit as st
-import streamlit.ReportThread as ReportThread
+
+try:
+    import streamlit.ReportThread as ReportThread
+    from streamlit.server.Server import Server
+except Exception:
+    # Streamlit >= 0.65.0
+    import streamlit.report_thread as ReportThread
+    from streamlit.server.server import Server
 
 # Normally we'd use a Streamtit module, but I want a module that doesn't live in
 # your current working directory (since local modules get removed in between
@@ -147,13 +153,7 @@ def _get_session_object():
     ctx = ReportThread.get_report_ctx()
 
     this_session = None
-    
-    current_server = Server.get_current()
-    if hasattr(current_server, '_session_infos'):
-        # Streamlit < 0.56        
-        session_infos = Server.get_current()._session_infos.values()
-    else:
-        session_infos = Server.get_current()._session_info_by_id.values()
+    session_infos = Server.get_current()._session_infos.values()
 
     for session_info in session_infos:
         s = session_info.session
@@ -163,6 +163,9 @@ def _get_session_object():
             or
             # Streamlit >= 0.54.0
             (not hasattr(s, '_main_dg') and s.enqueue == ctx.enqueue)
+            or
+            # Streamlit >= 0.65.2
+            (not hasattr(s, '_main_dg') and s._uploaded_file_mgr == ctx.uploaded_file_mgr)
         ):
             this_session = s
 

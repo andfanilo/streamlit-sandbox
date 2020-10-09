@@ -7,6 +7,12 @@ from sklearn.metrics import plot_confusion_matrix
 from sklearn.model_selection import train_test_split
 from vega_datasets import data
 
+st.markdown(
+"""<style>
+    .sidebar {flex-direction: row-reverse;}
+    </style>
+""", unsafe_allow_html=True)
+
 numerics = ["int16", "int32", "int64", "float16", "float32", "float64"]
 all_datasets = data.list_datasets()
 

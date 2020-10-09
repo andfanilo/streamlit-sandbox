@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="bm"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"
+        integrity="sha512-bydaxcpHiWGaIdaqCwrSYIXjj4xRh4P1C3BE+AdJUgYAKAhEWeAt5GzDgeYdLT+MGBYeLPJf7cTz4llPwwdk+A=="
+        crossorigin="anonymous"></script>
+    <script>
+        const data = {{ data }};
+        const loop = {{ loop }};
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('bm'),
+            renderer: 'svg',
+            loop: loop,
+            animationData: data
+        });
+    </script>
+</body>
+
+</html>
